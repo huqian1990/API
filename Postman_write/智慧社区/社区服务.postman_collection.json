@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "3ad9c0d4-7aa5-4fde-ba4e-438efe6723ba",
+		"name": "社区服务",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "社区服务建设_修改保存",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"address\": \"上海市宝山区央行正12301\",\r\n  \"carPark\": \"A1-A12\",\r\n  \"contactTel\": \"15952330194\",\r\n  \"name\": \"王雄鲜花室\",\r\n  \"pic\": \"王熊\",\r\n  \"coordinate\": \"S12，N121\",\r\n  \"remark\": \"处理各类居民事物，欢迎光临\",\r\n  \"serviceTime\": \"周一至周五：8:00-11:00,14:00-18:00；\",\r\n  \"type\": \"1\"\r\n  \r\n  \r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/web/serviceBuildInfo/v1/saveOrUpdate",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"web",
+						"serviceBuildInfo",
+						"v1",
+						"saveOrUpdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区服务建设_删除",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[34]"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/web/serviceBuildInfo/v1/delete",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"web",
+						"serviceBuildInfo",
+						"v1",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区服务建设_查询1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/web/serviceBuildInfo/v1/list",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"web",
+						"serviceBuildInfo",
+						"v1",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区服务建设_查询2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/web/serviceBuildInfo/v1/pageList",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"web",
+						"serviceBuildInfo",
+						"v1",
+						"pageList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区服务建设_数据导出",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/web/serviceBuildInfo/v1/export",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"web",
+						"serviceBuildInfo",
+						"v1",
+						"export"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

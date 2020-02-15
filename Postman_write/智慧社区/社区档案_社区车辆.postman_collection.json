@@ -1,0 +1,534 @@
+{
+	"info": {
+		"_postman_id": "47ce6c0a-f37a-40f3-8653-c57a5968d4c7",
+		"name": "社区档案_社区车辆",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "车辆标签——问题",
+			"item": [
+				{
+					"name": "社区标签添加/保存",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\r\n\"tagName\": \"112\",\r\n\"remark\": \"test\"\r\n}\r\n\r\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/cartagrelation/save",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"cartagrelation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "社区标签删除",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[43]\r\n\r\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/basecarinfo/delete",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"basecarinfo",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "社区标签列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/cartagrelation/list",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"cartagrelation",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "个人社区车辆信息表",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					},
+					{
+						"key": "residentId",
+						"value": "110",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecarinfo/list/110",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecarinfo",
+						"list",
+						"110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区车辆列表",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"pcStatus\": \"\",\r\n \"pcType\": \"\",\r\n \"pageNum\": 1,\r\n \"pageSize\": 10\r\n\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecarinfo/pagelist",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecarinfo",
+						"pagelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "个人车辆保存/修改",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"residentId\": \"107\",\r\n    \"lpCode\": \"浙A122221\",\r\n    \"isFocus\": false\r\n\r\n  }\r\n]"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecarinfo/save/110",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecarinfo",
+						"save",
+						"110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "个人车辆删除",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[200141]\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecarinfo/delete",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecarinfo",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "导出车辆信息",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "1014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"isAsc\": \"string\",\r\n  \"lpCodeOrPerson\": \"string\",\r\n  \"lpStatus\": \"string\",\r\n  \"orderBy\": \"string\",\r\n  \"orderByColumn\": \"string\",\r\n  \"pageNum\": 0,\r\n  \"pageSize\": 0,\r\n  \"pcType\": \"string\"\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:8092/smart/basecarinfo/v1/export",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "8092",
+					"path": [
+						"smart",
+						"basecarinfo",
+						"v1",
+						"export"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

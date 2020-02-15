@@ -1,0 +1,1139 @@
+{
+	"info": {
+		"_postman_id": "f47f58c2-f7fe-48d6-b5d5-6a97ce604982",
+		"name": "社区档案_社区基础设施",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "设备类型",
+			"item": [
+				{
+					"name": "设备类型添加",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n  \"deviceTypeObjs\": [\n    {       \n      \"deviceTypeName\": \"12\",\n      \"id\": 12,\n     \"remark\": \"12\"\n    }\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicetypeinfo/v1/batchSaveOrUpdate",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicetypeinfo",
+								"v1",
+								"batchSaveOrUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备类型删除",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deviceGroupId\": 0,\r\n  \"deviceTypeId\": 0,\r\n  \"id\": 0\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicetypeinfo/v1/delete",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicetypeinfo",
+								"v1",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备类型列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicetypeinfo/v1/list",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicetypeinfo",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "设备分组",
+			"item": [
+				{
+					"name": "设备分组添加/修改",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"deviceGroupObjs\": \r\n[\r\n\t{\r\n        \"deviceGroupName\": \"张师傅\",\r\n        \"remark\": \"摄像头\"\r\n\t\t\r\n\t}\r\n]\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicegroupinfo/v1/saveOrUpdate",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicegroupinfo",
+								"v1",
+								"saveOrUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备分组删除",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deviceGroupId\": 0,\r\n  \"deviceTypeId\": 0,\r\n  \"id\": 0\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicegroupinfo/v1/batchDel",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicegroupinfo",
+								"v1",
+								"batchDel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备分组列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicegroupinfo/v1/list",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicegroupinfo",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "设备监控点",
+			"item": [
+				{
+					"name": "设备监控点添加",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"monitorPointCode\": \"1\",\r\n  \"monitorPointName\": \"1\"\r\n }\r\n "
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitymonitorpointinfo/v1/saveOrUpdate",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitymonitorpointinfo",
+								"v1",
+								"saveOrUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备监控点删除",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"ids\": [\r\n    88\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitymonitorpointinfo/v1/batchDel",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitymonitorpointinfo",
+								"v1",
+								"batchDel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备监控点列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pageNum\": 1,\n  \"pageSize\": 10\n}\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitymonitorpointinfo/v1/pageList",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitymonitorpointinfo",
+								"v1",
+								"pageList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "设备品牌",
+			"item": [
+				{
+					"name": "设备品牌添加",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"deviceBrandCode\": \"1\",\r\n\"deviceBrandName\": \"1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicebrandinfo/v1/saveOrUpdate",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicebrandinfo",
+								"v1",
+								"saveOrUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备品牌删除",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"brandIds\": [\r\n    90\r\n  ],\r\n  \"ids\": [\r\n    81\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicebrandinfo/v1/batchDel",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicebrandinfo",
+								"v1",
+								"batchDel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备品牌列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydevicebrandinfo/v1/pageList",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydevicebrandinfo",
+								"v1",
+								"pageList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "设施设备",
+			"item": [
+				{
+					"name": "设备设施添加",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"address\": \"1\",\r\n\"deviceCode\": \"1\",\r\n\"deviceName\": \"1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydeviceinfo/v1/saveOrUpdate",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydeviceinfo",
+								"v1",
+								"saveOrUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备设施删除",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ids\": [\r\n    91\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydeviceinfo/v1/batchDel",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydeviceinfo",
+								"v1",
+								"batchDel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备设施列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydeviceinfo/v1/pageList",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydeviceinfo",
+								"v1",
+								"pageList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备设施实有数量",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydeviceinfo/v1/deviceCount",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydeviceinfo",
+								"v1",
+								"deviceCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备设施数据导出",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+								"exec": [
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userID",
+								"type": "text",
+								"value": "10014"
+							},
+							{
+								"key": "loginName",
+								"type": "text",
+								"value": "huqian"
+							},
+							{
+								"key": "communityId",
+								"type": "text",
+								"value": "201901"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://47.103.35.164:5002/smart/communitydeviceinfo/v1/export",
+							"protocol": "http",
+							"host": [
+								"47",
+								"103",
+								"35",
+								"164"
+							],
+							"port": "5002",
+							"path": [
+								"smart",
+								"communitydeviceinfo",
+								"v1",
+								"export"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

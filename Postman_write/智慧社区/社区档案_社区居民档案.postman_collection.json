@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "7bcdc7f2-12c5-4a0d-9eb1-71a4bb2a1b60",
+		"name": "社区档案_社区居民档案",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "社区居民列表",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "userID",
+						"value": "1014",
+						"type": "text"
+					},
+					{
+						"key": "loginName",
+						"value": "huqian",
+						"type": "text"
+					},
+					{
+						"key": "communityId",
+						"value": "201901",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/list",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区居民添加",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "userID",
+						"value": "1014",
+						"type": "text"
+					},
+					{
+						"key": "loginName",
+						"value": "huqian",
+						"type": "text"
+					},
+					{
+						"key": "communityId",
+						"value": "201901",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"birthday\": \"1991-10-31\",\r\n  \"censusRegister\": {\r\n    \"city\": \"市辖区\",\r\n    \"cityId\": \"120100\",\r\n    \"county\": \"河西区\",\r\n    \"countyId\": \"120103\",\r\n    \"province\": \"天津市\",\r\n    \"provinceId\": \"120000\"\r\n  },\r\n  \"censusRegisterDetailAddress\": \"上海市嘉定区龙翔正赵华小区12栋1203室\",\r\n  \"communityId\": 201901,\r\n  \"contactPhone\": \"88888888888\",\r\n  \"createBy\": \"string\",\r\n  \"education\": \"大学\",\r\n  \"id\": 0,\r\n  \"idCard\": \"321023111419903200\",\r\n  \"isFocus\": false,\r\n  \"isMarry\": \"已婚\",\r\n  \"nation\": \"汉族\",\r\n  \"nationality\": \"中国大陆\",\r\n  \"poc\": \"群众\",\r\n  \"profession\": \"文化传媒\",\r\n  \"remark\": \"string\",\r\n  \"resideInfoList\": [\r\n    {\r\n      \"houseId\": 0,\r\n      \"houseLevelDTOS\": [\r\n        {\r\n          \"level\": \"H\",\r\n          \"levelId\": 42,\r\n          \"name\": \"string\"\r\n        }\r\n      ],\r\n      \"relationType\": \"1\",\r\n      \"resideInfoId\": 0,\r\n      \"residePeriod\": \"string\",\r\n      \"resideReason\": \"8\",\r\n      \"resideStatus\": \"0\",\r\n      \"userId\": 0\r\n    }\r\n  ],\r\n  \"residentId\": 0,\r\n  \"residentName\": \"张小丹\",\r\n  \"sex\": \"1\",\r\n  \"workUnit\": \"上海鼓楼科技有限公司\"\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/save",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区居民详情页",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "1014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"communityId\": 201901,\r\n  \"houseId\": 0,\r\n  \"residentId\": 53\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/detail",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区居民编辑页",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "1014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"communityId\": 201901,\r\n  \"houseId\": 0,\r\n  \"residentId\": 53\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/detailForUpdate",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"detailForUpdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区居民保存/修改",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "1014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"birthday\": \"1991-10-31\",\r\n  \"censusRegister\": {\r\n    \"city\": \"市辖区\",\r\n    \"cityId\": \"120100\",\r\n    \"county\": \"河西区\",\r\n    \"countyId\": \"120103\",\r\n    \"province\": \"天津市\",\r\n    \"provinceId\": \"120000\"\r\n  },\r\n  \"censusRegisterDetailAddress\": \"上海市嘉定区龙翔正赵华小区12栋1203室\",\r\n  \"communityId\": 201901,\r\n  \"contactPhone\": \"88888888888\",\r\n  \"createBy\": \"string\",\r\n  \"education\": \"大学\",\r\n  \"id\": 0,\r\n  \"idCard\": \"321023101419903210\",\r\n  \"isFocus\": false,\r\n  \"isMarry\": \"已婚\",\r\n  \"nation\": \"汉族\",\r\n  \"nationality\": \"中国大陆\",\r\n  \"poc\": \"群众\",\r\n  \"profession\": \"文化传媒\",\r\n  \"remark\": \"string\",\r\n  \"resideInfoList\": [\r\n    {\r\n      \"houseId\": 0,\r\n      \"houseLevelDTOS\": [\r\n        {\r\n          \"level\": \"H\",\r\n          \"levelId\": 42,\r\n          \"name\": \"string\"\r\n        }\r\n      ],\r\n      \"relationType\": \"1\",\r\n      \"resideInfoId\": 0,\r\n      \"residePeriod\": \"string\",\r\n      \"resideReason\": \"8\",\r\n      \"resideStatus\": \"0\",\r\n      \"userId\": 0\r\n    }\r\n  ],\r\n  \"residentId\": 0,\r\n  \"residentName\": \"张大丹\",\r\n  \"sex\": \"1\",\r\n  \"workUnit\": \"上海鼓楼科技有限公司\"\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/save",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区居民详查询",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "1014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageNum\": 1,\r\n  \"pageSize\": 10,\r\n   \"keyword\": \"21023101419903210\"\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/list",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除居民信息",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "1014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[58]\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseresidentinfo/delete",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseresidentinfo",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "666416b3-353a-49d5-abdf-080715d5ccd7",
+			"key": "userID",
+			"value": "1014",
+			"type": "string"
+		},
+		{
+			"id": "3def362c-996a-47e7-a773-b6a6e387f5a0",
+			"key": "loginName",
+			"value": "huqiam",
+			"type": "string"
+		},
+		{
+			"id": "1e1226cc-ad2f-423f-bcb3-3ca76ede7761",
+			"key": "communityId",
+			"value": "201901",
+			"type": "string"
+		}
+	]
+}

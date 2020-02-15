@@ -1,0 +1,588 @@
+{
+	"info": {
+		"_postman_id": "f2207afd-36e3-4ad5-90a0-a016567421f4",
+		"name": "社区单位信息表",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "社区单位_添加修改",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"companyName\": \"阿里巴巴商务公司\",\r\n  \"busLic\": \"HsWOAINI1997\",\r\n  \"busLicPictureUrl\": \"2.jpeg\",\r\n  \"legalIdentityCard\": \"321029199811071123\",\r\n  \"legalPerson\": \"马爸爸\",\r\n  \"legalPhone\": \"13922222222\",\r\n  \"legalPicture\": \"h1.jpeg\",\r\n  \"legelAddress\": \"杭州市上城区阿里巴巴大楼1206室\",\r\n  \"operatorPeriod\": [\"2019-11-07T06:36:54.801Z\", \"2019-12-19T06:36:54.801Z\"],\r\n  \"address\": \"宝山区江桥镇天际蓝桥08栋1204室\"\r\n \r\n \r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/save",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_删除",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[48]"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/delete",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_查询全部",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n  \"companyId\": 77,\r\n   \"pageNum\": 1,\r\n  \"pageSize\":10\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/pagelist",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"pagelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_查询条件",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/list",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_添加/修改成员",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"companyId\": 67,\r\n  \"contactPhone\": \"15849338388\",\r\n  \"idCard\": \"321292000399939299\",\r\n  \"memberName\": \"小蜜桃\",\r\n  \"sex\": \"女\",\r\n  \"pictureUrl\":\" \"\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseComMemberinfo/save",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseComMemberinfo",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_成员信息列表",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"companyId\":\"67\",\n\t\"pageNum\":1,\n\t\"pageSize\":10\n\t\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/baseComMemberinfo/pagelist",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"baseComMemberinfo",
+						"pagelist"
+					]
+				},
+				"description": "社区单位 _居民信息列表"
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_单位车辆_添加/修改",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n   \r\n    \"carBrand\": \"别克君威AAA\",\r\n    \"carColour\": \"黑色\",\r\n    \"companyId\": 77,\r\n    \"focus\": true,\r\n    \"isFocus\": false,\r\n    \"lpCode\": \"苏A123456\",\r\n    \"lpExpireDate\": \"2019-10-31T01:45:08.953Z\",\r\n    \"residentId\": 0\r\n\r\n  }\r\n]"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/saveOrUpdateCar",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"saveOrUpdateCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_车辆信息查询",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"companyId\": 67,\r\n  \"pageNum\": 1,\r\n  \"pageSize\":10\r\n}\r\n\r\n\r\n\r\n\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/car/pagelist",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"car",
+						"pagelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "社区单位_导出单位信息",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7af386c8-7251-40aa-86b2-214b4b3f6cc8",
+						"exec": [
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "userID",
+						"type": "text",
+						"value": "10014"
+					},
+					{
+						"key": "loginName",
+						"type": "text",
+						"value": "huqian"
+					},
+					{
+						"key": "communityId",
+						"type": "text",
+						"value": "201901"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}"
+				},
+				"url": {
+					"raw": "http://47.103.35.164:5002/smart/basecompanyinfo/v1/export",
+					"protocol": "http",
+					"host": [
+						"47",
+						"103",
+						"35",
+						"164"
+					],
+					"port": "5002",
+					"path": [
+						"smart",
+						"basecompanyinfo",
+						"v1",
+						"export"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
